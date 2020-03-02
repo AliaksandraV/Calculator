@@ -5,13 +5,14 @@ public class CreditCalculator {
     private static final int CREDIT_SUM = 85000;
     private static final double PERCENT = 0.12;
     private static final int MONTHLY_PAYMENT = 2800;
+    private static final String L  ="Минимальная месячная выплата по основному долгу: %d";
 
     private static final int YEARS = 20;
     private static final int CONSTANT_MONTHLY_PAYMENT_PART = CREDIT_SUM / (YEARS * 12);
 
     public static void main(String[] args) {
         int months = calculate(CREDIT_SUM, 1);
-        print("Минимальная месячная выплата по основному долгу: %d", CONSTANT_MONTHLY_PAYMENT_PART);
+        print(L, CONSTANT_MONTHLY_PAYMENT_PART);
         print("Количество месяцев на выплату: %d", months);
         print("Общая уплаченная сумма: %d", MONTHLY_PAYMENT * months);
     }
