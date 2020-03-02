@@ -3,7 +3,7 @@ package pac;
 public class CreditCalculator {
 
     private static final int CREDIT_SUM = 85_000;
-    private static final double PERCENT = 0.1225;
+    private static final double PERCENT = 0.12;
     private static final int MONTHLY_PAYMENT = 2800;
 
     private static final int YEARS = 20;
